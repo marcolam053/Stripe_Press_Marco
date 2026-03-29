@@ -136,9 +136,9 @@ To better reflect real-world e-commerce behaviour and increase average order val
 the application can be extended with a richer purchasing experience.
 
 A new cart system would allow users to:
-- add multiple items 
-- adjust quantities 
-- review their order before checkout
+- Add multiple items 
+- Adjust quantities 
+- Review their order before checkout
 
 This creates more opportunities for upsell and increases basket size compared to a one-click purchase flow.
 
