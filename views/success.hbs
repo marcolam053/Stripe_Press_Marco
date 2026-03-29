@@ -1,0 +1,42 @@
+<main>
+  <div class="mt-40 text-center text-success">
+    <h1>
+      <i class="far fa-check-circle"></i> 
+      Success!
+    </h1>
+  </div>
+  <div class="mt-40 text-center">
+      {{#if error}}
+          <div class="alert alert-danger">{{error}}</div>
+      {{else}}
+          <div class="mt-20 text-center text-secondary border-placeholder">
+              <div class="card mt-20 shadow-sm" style="border-radius: 10px;">
+                  <div class="card-header bg-dark text-white text-center">
+                      <h5 class="mb-0"><strong>Transaction Details</strong></h5>
+                  </div>
+                  <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                          <span><strong>Transaction ID</strong></span>
+                          <span>{{transaction_Id}}</span>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between">
+                          <span><strong>Status</strong></span>
+                          <span class="text-success">{{status}}</span>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between">
+                          <span><strong>Amount</strong></span>
+                          <span>${{amount}}</span>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between">
+                          <span><strong>Currency</strong></span>
+                          <span>{{currency}}</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      {{/if}}
+  </div>
+</main>
